@@ -5,95 +5,94 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cookly</title>
         <meta name="description" content="Cookly, хүссэн хоолоо хий!">
-        <meta name="keywords" content="хоол хийх, cookly, хоолны жор">
-        <meta name="author" content="Team Cookly">
-        <meta name="robots" content="index, follow">
         <link rel="stylesheet" href="./style.css">
         <link rel="icon" type="image/x-icon" href="./logo.svg">
     </head>
     <body>
-        <div class="container">
-            <div class="wrapper">
-                <div class="top-navbar">
-                    <img src="./logo.svg" width="64" alt="Cookly logo">
-                    <img src="./user.svg" width="32" alt="profile">
-                </div>
-                <div class="bio-wrapper">
-                    <div class="title-fridge">
-                        <div>Агуулах</div>
-                        <div>Танд 8 орц байна</div>
+        <header class="top-navbar">
+            <img src="./logo.svg" width="64" alt="Cookly logo">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Нүүр хуудас</a>
+                    </li>
+                    <li>
+                        <a href="food_details.html">Хоол</a>
+                    </li>
+                    <li>
+                        <a href="signin.html">Нэвтрэх</a>
+                    </li>
+                    <li>
+                        <a href="#">Бүртгүүлэх</a>
+                    </li>
+                </ul>
+            </nav>
+            <img src="./user.svg" width="32" alt="profile">
+        </header>
+        <aside>
+            <article class="title-fridge">
+                <h2>Агуулах</h2>
+                <h3>Танд 8 орц байна</h3>
+            </article>
+            <input type="text" placeholder="Орц нэмэх/хасах/хуулах">
+            <section class="ingre-wrapper">
+                <h4>Орцоо сонгоорой</h4>
+                <article class="type-wrapper">
+                    <div class="type-header">
+                        <img src="./essential.svg" width="28" alt="essentials">
+                        <h2>Хэрэгцээт орцууд</h2>
+                        <img src="./caret.svg" width="12" alt="caret">
+                        <p>4/40 найрлага</p>
                     </div>
-                    <div class="title-cookly">
-                        <div>Cookly</div>
-                        <div>Та 82 хоол хийх боломжтой</div>
+                    <ul class="type-bottom">
+                        <li>цөцгийн тос</li>
+                        <li>өндөг</li>
+                        <li>сахар</li>
+                        <li>давс</li>
+                        <li>тос</li>
+                        <li>гурил</li>
+                        <li>цагаан будаа</li>
+                        <li>+бусад 31</li>
+                    </ul>
+                </article>
+                <article class="type-wrapper">
+                    <div class="type-header">
+                        <img src="./vegetables.svg" width="28" alt="vegetables">
+                        <h2>Ногоонууд</h2>
+                        <img src="./caret.svg" width="12" alt="caret">
+                        <p>4/100 найрлага</p>
                     </div>
-                </div>
-                <div class="content">
-                    <div class="sidebar">
-                        <input type="text" placeholder="Орц нэмэх/хасах/хуулах">
-                        <div class="ingre-wrapper">
-                            <div class="type-wrapper">
-                                <div class="type-header">
-                                    <img src="./essential.svg" alt="essentials">
-                                    <div>Хэрэгцээт орцууд</div>
-                                    <img src="./caret.svg" alt="caret">
-                                    <div>4/40 найрлага</div>
-                                </div>
-                                <div class="type-bottom">
-                                    <div>цөцгийн тос</div>
-                                    <div>өндөг</div>
-                                    <div>сүү</div>
-                                    <div>сармис</div>
-                                    <div>сахар</div>
-                                    <div>давс</div>
-                                    <div>тос</div>
-                                    <div>гурил</div>
-                                    <div>цагаан будаа</div>
-                                    <div>+бусад 31</div>
-                                </div>
-                            </div>
-                            <div class="type-wrapper">
-                                <div class="type-header">
-                                    <img src="./vegetables.svg" alt="vegetables">
-                                    <div>Ногоонууд</div>
-                                    <img src="./caret.svg" alt="caret">
-                                    <div>4/100 найрлага</div>
-                                </div>
-                                <div class="type-bottom">
-                                    <div>сонгино</div>
-                                    <div>лууван</div>
-                                    <div>сармис</div>
-                                    <div>улаан лойл</div>
-                                    <div>броколли</div>
-                                    <div>чинжүү</div>
-                                    <div>хар мөөг</div>
-                                    <div>төмс</div>
-                                    <div>+бусад 92</div>
-                                </div>
-                            </div>
-                            <div class="type-wrapper">
-                                <div class="type-header">
-                                    <img src="./fruits.svg" alt="fruits">
-                                    <div>Жимснүүд</div>
-                                    <img src="./caret.svg" alt="caret">
-                                    <div>0/50 найрлага</div>
-                                </div>
-                                <div class="type-bottom">
-                                </div>
-                            </div>
-                        </div>
+                    <ul class="type-bottom">
+                        <li>сонгино</li>
+                        <li>лууван</li>
+                        <li>сармис</li>
+                        <li>улаан лооль</li>
+                        <li>брокколи</li>
+                        <li>чинжүү</li>
+                        <li>хар мөөг</li>
+                        <li>төмс</li>
+                        <li>+бусад 92</li>
+                    </ul>
+                </article>
+                <article class="type-wrapper">
+                    <div class="type-header">
+                        <img src="./fruits.svg" width="28" alt="fruits">
+                        <h2>Жимснүүд</h2>
+                        <img src="./caret.svg" width="12" alt="caret">
+                        <p>0/50 найрлага</p>
                     </div>
-                    <div class="main">
-                        <div class="signin-wrapper">
-                            <img src="./logo.svg" width="128" alt="Cookly logo">
-                            <input type="text" placeholder="Та имэйлээ оруулна уу">
-                            <input type="text" placeholder="Та нууц үгээ оруулна уу">
-                            <input type="text" placeholder="Нууц үгээ давтана уу">
-                            <div>Бүртгүүлэх</div>
-                        </div>
-                    </div>
-                </div>
+                    <ul class="type-bottom"></ul>
+                </article>
+            </section>
+        </aside>
+        <main>
+            <div class="signin-wrapper">
+                <img src="./logo.svg" width="128" alt="Cookly logo">
+                <input type="text" placeholder="Та имэйлээ оруулна уу">
+                <input type="text" placeholder="Та нууц үгээ оруулна уу">
+                <input type="text" placeholder="Нууц үгээ давтана уу">
+                <button>Бүртгүүлэх</button>
             </div>
-        </div>
+        </main>
     </body>
 </html>
