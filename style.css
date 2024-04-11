@@ -69,6 +69,7 @@ nav ul li a {
 aside {
   width: 25%;
   padding: var(--size-2xl);
+  padding-top: 0;
 }
 
 main {
@@ -113,17 +114,26 @@ main {
   margin-bottom: var(--size-2xl);
 }
 
+.main-wrapper {
+  width: 75%;
+  flex-grow: 1;
+  padding: var(--size-2xl);
+  margin: 5%;
+  margin-top: 0;
+  padding-top: 0;
+}
+
 .content-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-grow: 1;
+  height: 100%;
   padding: var(--size-2xl);
-  width: 75%;
   border-radius: var(--border-radius-default);
   border-color: var(--color-border-default);
   border-style: solid;
-  margin: 5%;
 }
 
 .title-cookly {
@@ -135,7 +145,7 @@ main {
 }
 
 .foods-wrapper {
-  width: 700px;
+  margin: 0 15%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -148,7 +158,7 @@ main {
   border-radius: var(--size-md);
   padding: var(--size-2xl);
   overflow-y: scroll;
-  height: 600px;
+  height: 500px;
 }
 
 .each-food {
@@ -180,7 +190,7 @@ button {
 
 .search-icon {
   position: absolute;
-  margin-top: 28px;
+  margin-top: 24px;
   margin-left: 10px;
 }
 
