@@ -23,7 +23,10 @@
 
   --border-radius-default: var(--size-lg);
 
-  --border-default: var(--size-sm) solid rgba(0, 0, 0, 0.3);
+  --width-eachFood-lg: 300px;
+  --height-eachFood-lg: 90px;
+
+  --border-default: var(--size-sm) solid var(--color-border-default);
 }
 
 ::-webkit-scrollbar-track {
@@ -128,9 +131,9 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-grow: 1;
-  height: 100%;
-  padding: var(--size-2xl);
+  /* flex-grow: 1; */
+  /* height: 100%; */
+  padding: var(--size-5xl);
   border-radius: var(--border-radius-default);
   border-color: var(--color-border-default);
   border-style: solid;
@@ -145,12 +148,9 @@ main {
 }
 
 .foods-wrapper {
-  margin: 0 15%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  overflow-y: scroll;
+  justify-content: space-around;
 }
 
 .ingre-wrapper {
@@ -162,7 +162,12 @@ main {
 }
 
 .each-food {
-  width: 250px;
+  width: var(--width-eachFood-lg);
+  height: var(--height-eachFood-lg);
+  display: flex;
+  gap: var(--size-2xl);
+  border: var(--border-default);
+  border-radius: var(--border-radius-default);
 }
 
 input {
