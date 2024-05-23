@@ -50,10 +50,29 @@
 }
 
 header {
+  grid-area: header;
+}
+
+aside {
+  grid-area: menu;
+}
+
+.main-wrapper {
+  grid-area: main;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: "menu main ";
+}
+
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: var(--size-2xl);
+  /* grid-area: header; */
 }
 
 nav ul {
@@ -70,14 +89,15 @@ nav ul li a {
 }
 
 aside {
-  width: 25%;
+  /* width: 25%; */
   padding: var(--size-2xl);
   padding-top: 0;
+  /* grid-area: menu; */
 }
 
-main {
+/* main {
   display: flex;
-}
+} */
 
 .type-header {
   display: flex;
@@ -95,8 +115,10 @@ main {
 }
 
 .type-wrapper ul {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: none;
+  transition: display 0.3s ease;
 }
 
 .type-wrapper ul li {
@@ -111,6 +133,11 @@ main {
   cursor: pointer;
 }
 
+.type-wrapper ul li.activeToggleButton {
+  background-color: var(--color-toggleButton-enabled) !important;
+  color: white;
+}
+
 .search {
   width: 100%;
   margin-top: var(--size-2xl);
@@ -118,12 +145,13 @@ main {
 }
 
 .main-wrapper {
-  width: 75%;
+  /* width: 75%; */
   flex-grow: 1;
   padding: var(--size-2xl);
   margin: 5%;
   margin-top: 0;
   padding-top: 0;
+  /* grid-area: main; */
 }
 
 .content-wrapper {
@@ -131,8 +159,6 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* flex-grow: 1; */
-  /* height: 100%; */
   padding: var(--size-5xl);
   border-radius: var(--border-radius-default);
   border-color: var(--color-border-default);
@@ -148,9 +174,6 @@ main {
 }
 
 .foods-wrapper {
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; */
   display: grid;
   grid-template-columns: repeat(
     3,
@@ -330,4 +353,35 @@ button {
 
 .food-rating {
   display: flex;
+}
+
+.activeToggleButton {
+  background-color: var(--color-toggleButton-enabled);
+  color: white;
+}
+
+.disactiveToggleButton {
+  background-color: var(--color-toggleButton-disabled);
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-areas: "main";
+  }
+  .foods-wrapper {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
+  aside {
+    display: none;
+  }
+  .detail-wrapper {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 900px) {
+  .foods-wrapper {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
 }
