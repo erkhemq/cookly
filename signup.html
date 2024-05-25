@@ -123,11 +123,11 @@
       <section class="main-wrapper">
         <section class="content-wrapper">
           <div class="sign-wrapper">
-            <form>
+            <form action="http://localhost:4000/api/users/register", method="POST">
               <img src="./assets/logo.svg" width="128" alt="Cookly logo" />
-              <input type="text" placeholder="Та имэйлээ оруулна уу" />
-              <input type="text" placeholder="Та нууц үгээ оруулна уу" />
-              <input type="text" placeholder="Нууц үгээ давтана уу" />
+              <input type="text" placeholder="Та имэйлээ оруулна уу" name="email"/>
+              <input type="text" placeholder="Та нууц үгээ оруулна уу" name="password"/>
+              <input type="text" placeholder="Нууц үгээ давтана уу" name="password2"/>
               <button type="submit">Бүртгүүлэх</button>
             </form>
           </div>
