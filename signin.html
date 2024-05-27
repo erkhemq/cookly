@@ -58,7 +58,8 @@
       <section class="main-wrapper">
         <section class="content-wrapper">
           <div class="sign-wrapper">
-            <form id="login-form">
+            <!-- <<<<<<< HEAD -->
+            <!-- <form id="login-form">
               <img src="./assets/logo.svg" width="128" alt="Cookly logo" />
               <input
                 type="text"
@@ -69,7 +70,25 @@
                 type="password"
                 id="password"
                 placeholder="Та нууц үгээ оруулна уу"
+              /> -->
+            <!-- ======= -->
+            <form
+              action="http://localhost:4000/api/users/login"
+              ,
+              method="POST"
+            >
+              <img src="./assets/logo.svg" width="128" alt="Cookly logo" />
+              <input
+                type="text"
+                placeholder="Та имэйлээ оруулна уу"
+                name="email"
               />
+              <input
+                type="text"
+                placeholder="Та нууц үгээ оруулна уу"
+                name="password"
+              />
+              >>>>>>> a76d35cc508e4815a78c9ffb92d92025b19ce8c8
               <button type="submit">Нэвтрэх</button>
             </form>
             <div id="login-feedback"></div>
