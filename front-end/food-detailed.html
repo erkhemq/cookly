@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookly</title>
+    <meta name="description" content="Cookly, хүссэн хоолоо хий!" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/logo.svg" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="top-navbar">
+      <div class="logo">
+        <img src="./assets/logo.svg" width="64" alt="Cookly logo" />
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a href="index.html">Нүүр хуудас</a>
+          </li>
+          <li id="login-link">
+            <a href="signin.html">Нэвтрэх</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="profile-dropdown">
+        <img
+          src="./assets/user.svg"
+          width="32"
+          alt="profile"
+          id="profile-img"
+        />
+        <div class="dropdown-content">
+          <span class="user-name">User Name</span>
+          <button class="logout-btn">Гарах</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <recipe-component></recipe-component>
+    </main>
+
+    <script src="./food-detail.js" type="module"></script>
+    <script src="./script.js"></script>
+
+    <!-- bundle.min.js sudlah -->
+  </body>
+</html>
